@@ -19,14 +19,14 @@ div.main {
   text-align: center;
   color: white;
   font-family: "Avenir Next";
-  font-style: italic;
   font-weight: bold;
   align-content: center;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   margin: 0.5em 0;
+  font-style: italic;
 }
 
 h2 {
@@ -98,7 +98,7 @@ p {
 }
 
 .filmentry {
-  margin: 3em;
+  margin: 7em;
 }
 
 .photo {
