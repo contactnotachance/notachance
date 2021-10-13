@@ -18,19 +18,29 @@ html, body, div.main {
 div.main {
   text-align: center;
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Avenir Next";
+  font-style: italic;
+  font-weight: bold;
   align-content: center;
 }
 
 h1 {
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 3em;
   margin: 0.5em 0;
 }
 
 h2 {
   font-size: 1em;
-  font-weight: 400;
+}
+
+h3 {
+  font-weight: normal;
+  margin-top: 3em;
+}
+
+p {
+  font-weight: normal;
+  margin: 0em;
 }
 
 .topnav {
@@ -41,12 +51,11 @@ h2 {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
   display: block;
   text-align: center;
   padding: 0em 2em;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1em;
   color: white;
 }
 
@@ -89,9 +98,35 @@ h2 {
 }
 
 .filmentry {
-  margin: 2em 0;
+  margin: 3em;
+}
+
+.photo {
+  width:80vw;
+  height:80vh;
+}
+
+.photo_entry {
+  margin: 5em;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
 .contact {
   margin: 2em;
+}
+
+.fab {
+  padding: 0em 0.5em;
+  width: 1em;
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  padding: 4em;
 }
