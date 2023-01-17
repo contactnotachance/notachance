@@ -1,26 +1,35 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { Tabs, Tab, Typography } from '@mui/material';
-
 import { Paths } from "../models/Routes"
 
-function Header() {
-  const [tabSelected, setTabSelected] = React.useState(0);
+function Header({tabValue}) {
+  const headerTitleStyle = {
+    fontStyle: "italic",
+    fontFamily: "Avenir Next",
+    fontWeight: "bold",
+    alignContent: "center",
+    color: "white",
+  }
 
-    const handleTabChange = (event, newValue) => {
-      setTabSelected(newValue);
-    };
+  const tabTitleStyle = {
+    color: "white",
+    fontFamily: "Avenir Next",
+    fontWeight: "bold",
+  }
 
-    return (
-      <>
-        <Tabs value={tabSelected} onChange={handleTabChange} centered>
-          <Tab label="Home" href={Paths.Home}/>
-          <Tab label="Photos" href={Paths.Photos}/>
-          <Tab label="Contact" href={Paths.Contact}/>
-        </Tabs>
-        <Typography variant="h2" align="center">NOTACHANCE</Typography>
-      </>
-    );
+  const indicatorStyle = {
+    color: "white"
+  }
+
+  return (
+    <>
+      <Typography variant="h2" align="center" style={headerTitleStyle}>NOTACHANCE</Typography>
+      <Tabs value={tabValue} centered TabIndicatorProps={{style: {backgroundColor: "white"}}}>
+        <Tab value="/" label="Home" href={Paths.Home} style={tabTitleStyle}/>
+        <Tab value="/photos" label="Photos" href={Paths.Photos} style={tabTitleStyle}/>
+        <Tab value="/contact" label="Contact" href={Paths.Contact} style={tabTitleStyle}/>
+      </Tabs>
+    </>
+  );
 }
 
 export default Header;
