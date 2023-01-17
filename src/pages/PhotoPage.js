@@ -4,13 +4,11 @@ import Photo from "../components/Photo.js"
 
 function PhotoPage() {
   return (
-    <Container maxWidth="xl">
-      <ImageList variant="masonry" cols={2} gap={8}>
-      { Photos.map((photoSource) =>
-        <Photo source={photoSource}/>
-      )}
-      </ImageList>
-    </Container>
+    <ImageList variant="masonry" cols={2} gap={8}>
+    { Photos.map((photoSource) =>
+      <Photo source={photoSource}/>
+    )}
+    </ImageList>
   );
 }
 

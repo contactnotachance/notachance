@@ -1,17 +1,10 @@
-import { Container, Typography, IconButton, Grid } from "@mui/material"
+import { Typography, IconButton, Grid } from "@mui/material"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 
 function ContactPage() {
-  const contactPageStyle = {
-    fontFamily: "Avenir Next",
-    fontWeight: "bold",
-    alignContent: "center",
-    color: "white",
-  }
-
   return (
-    <Container maxWidth="xl" style={contactPageStyle}>
+    <>
       <Grid container justifyContent="center" style={{ marginTop: "100px", marginBottom: "100px" }}>
         <Typography variant="h6">Juan Nieto</Typography>
       </Grid>
@@ -31,7 +24,7 @@ function ContactPage() {
         <Typography variant="body1">Film | Photo | Design</Typography>
         <Typography variant="body1">All inquires contact email above.</Typography>
       </Grid>
-    </Container>
+    </>
   );
 }
 
